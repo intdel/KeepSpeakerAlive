@@ -6,7 +6,7 @@ To use it, you need to download the script plus the "Barely Audible.mp3." Feel f
 ## Important:
 
 After download you need to give the .sh file the executable bit, which is done via: 
-*chmod +x ./loop.sh*
+*chmod +x ./keepSoundAlive.sh*
 This script uses afplay, which is **OS X only**. To use it under linux you will need mpg123 and for Windows it seems mplay32 is needed (NOTE: both are untested).
 
-To run it periodically, use [crontab](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man5/crontab.5.html#//apple_ref/doc/man/5/crontab) (even works under OS X).
+To run it periodically, use [crontab](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man5/crontab.5.html#//apple_ref/doc/man/5/crontab) (even works under OS X). Make sure to use *keepSoundAliveCron.sh* for this. It will output a log to /tmp/KeepSoundAlive.log.
